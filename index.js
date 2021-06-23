@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const prettyjson = require("prettyjson");
 
 app.use(bodyParser.json());
-app.listen(1234);
+app.listen(process.env.PORT || 1234);
 
 app.get("/", (req, res) => {
   const sqlQuery = "SELECT * FROM dbo.location";
