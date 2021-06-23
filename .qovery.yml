@@ -1,0 +1,11 @@
+---
+application:
+  name: "serversite"
+  project: "testWebsite"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-serversite"
+  routes:
+  - application_name: "serversite"
+    paths:
+    - "/*"
