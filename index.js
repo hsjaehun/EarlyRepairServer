@@ -82,6 +82,7 @@ app.get("/WTR", (req, res) => {
 });
 
 app.get("/RTW", (req, res) => {
+  const nothing;
   const html2 = `<body style="display:flex;justify-content:center;flex-direction:column;align-items:center">
       <h2>React native webview</h2>
       <h2>React native webview data transfer between Native to web</h2>
