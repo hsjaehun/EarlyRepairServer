@@ -3,13 +3,13 @@
   "name": "earlyrepairserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon ./index.js",
-    "start": "node index.js"
+    "watch": "nodemon ./app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
