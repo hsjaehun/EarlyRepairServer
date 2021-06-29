@@ -35,7 +35,7 @@ app.post("/insert", (req, res) => {
     userType,
     technicianId,
   } = req.body;
-  const sqlQuery = `INSERT dbo.location (time, lat, lng, os, osVersion, companyId, userId, firstName, lastName, userType, technicianId) VALUES ('${time}', ${lat}, ${lng}, '${os}', '${osVersion}', ${companyId}, ${userId}, '${technicianId}', '${firstName}', '${lastName}', '${userType}' )`;
+  const sqlQuery = `INSERT dbo.location (time, lat, lng, os, osVersion, companyId, userId, firstName, lastName, userType, technicianId) VALUES ('${time}', ${lat}, ${lng}, '${os}', '${osVersion}', ${companyId}, ${userId}, '${firstName}', '${lastName}', '${userType}', '${technicianId}' )`;
 
   mssql.connect(config, (err) => {
     if (err) console.log(err);
